@@ -1,8 +1,8 @@
 extends layout
 
 block content
-    h1 Add birthday
-    form(action='/addBirthday', method='POST')
+    h1(class='centered') Add birthday
+    form.centered-form(action='/addBirthday', method='POST')
         label(for='memoTitle') Friend:
         input(type='text', id='memoTitle', name='memoTitle')
         br
@@ -10,4 +10,4 @@ block content
         input(type='text', id='memoContent', name='memoContent')
         br
         button(type='submit') Add birthday
-    button(onclick='history.back()') Back
+    button.centered-button(onclick='history.back()') Back

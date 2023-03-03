@@ -16,3 +16,39 @@ a {
   margin: 0 auto;
   text-align: center;
 }
+
+.centered-form {
+  text-align: center;
+}
+
+.centered-form label,
+.centered-form input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-add {
+  margin-right: 10px;
+}
+
+.centered-button {
+  padding-right: 10px;
+}
+
+
+
+.centered-button {
+  display: block; /* to make the button fill the entire width */
+  margin: 0 auto; /* to horizontally center the button */
+}
+
+.centered-list {
+  text-align: center;
+}
+
+.centered-list li {
+  display: inline-block;
+  text-align: left; /* to align the text to the left */
+  margin: 10px; /* to add some spacing between the list items */
+}
+
