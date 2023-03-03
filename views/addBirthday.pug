@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Add birthday
+    form(action='/addBirthday', method='POST')
+        label(for='memoTitle') Friend:
+        input(type='text', id='memoTitle', name='memoTitle')
+        br
+        label(for='memoContent') Birthday:
+        input(type='text', id='memoContent', name='memoContent')
+        br
+        button(type='submit') Add birthday
+    button(onclick='history.back()') Back

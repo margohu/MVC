@@ -5,3 +5,8 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+      form(action='/addBirthday', method='POST')
+        label(for='memoTitle') Friend:
+        input(type='text', id='memoTitle', name='memoTitle')
+        br
+        button(type='submit') Add birthday
