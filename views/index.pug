@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1(class='centered')= title
+  a(class='centered-link', href='/addBirthday') Add Friend's Birthday
+  br
+  a(class='centered-link', href='/seeAll') See All Birthdays
