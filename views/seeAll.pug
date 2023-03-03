@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 All birthdays
+    ul
+        each all in seeAll
+            li
+                h2= all.title
+                p= all.content
+    button(onclick='history.back()') Back

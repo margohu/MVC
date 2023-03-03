@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+// Initialize an array to store the birthdays
+var seeAll = [];
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'My Friends Birthdays' });
@@ -20,8 +23,13 @@ router.post('/addBirthday', function(req, res, next) {
   var newMemo = { title: memoTitle, content: memoContent };
   seeAll.push(newMemo);
 
-  // Redirect the user to the birthday page- does not work yet but needed in next user-story
+  // Redirect the user to the birthday page
   res.redirect('/seeAll');
+});
+
+/* GET all birthdays page. */
+router.get('/seeAll', function(req, res, next) {
+  res.render('seeAll', { title: 'Kõik sünnipäevad', seeAll: seeAll });
 });
 
 module.exports = router;
